@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".songsCategoryImg"></activity>
+        <activity android:name=".uploadAlbum" />
+        <activity android:name=".upload_songs" />
+        <activity android:name=".online_radio" />
+        <activity android:name=".online_songs" />
+        <activity android:name=".online_home" />
+        <activity android:name=".registeration" />
+        <activity android:name=".resetPassword" />
+        <activity android:name=".login" />
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AlbumDetails" />
+        <activity android:name=".Player" />
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="actionprevious" />
+                <action android:name="actionnext" />
+                <action android:name="actionplay" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

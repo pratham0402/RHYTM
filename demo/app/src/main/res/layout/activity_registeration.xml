@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".registeration">
+
+
+
+    <EditText
+        android:id="@+id/etRegName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_tv"
+        android:ems="10"
+        android:drawableStart="@drawable/custom_user"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:inputType="textPersonName"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_tv"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/custom_email"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegName"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <EditText
+        android:id="@+id/etRegPass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_tv"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/custom_lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegEmail"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="register"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegPass"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Already has an account? Login "
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg"
+        app:layout_constraintVertical_bias="0.561" />
+
+</LinearLayout>

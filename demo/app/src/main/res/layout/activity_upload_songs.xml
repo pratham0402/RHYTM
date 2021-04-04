@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".upload_songs">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choose Category"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_tv"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_tv">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:background="@drawable/custom_button"
+            android:layout_margin="10dp"
+            android:onClick="openAudioFiles"
+            android:text="Upload Song"
+            android:textStyle="italic"
+            android:id="@+id/openAudioFiles"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="No file selected"
+            android:id="@+id/songFileSel"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/uplPB"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:progressTint="#0D88EB" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="UPLOAD"
+        android:onClick="uploadFileToFirebase"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:id="@+id/uplBtn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/online_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Album"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/online_album"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Artist"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/online_artist"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:text="data"
+            android:id="@+id/online_data"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="duration"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/online_dur"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/onlineIV"/>
+
+
+    </LinearLayout>
+
+    <!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/openImage"
+        android:onClick="openAlbumUploadActivity"
+        android:text="open image upload activity"/>-->
+
+</LinearLayout>

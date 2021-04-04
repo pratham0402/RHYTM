@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AlbumDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/albumIcon"
+        android:src="@drawable/comm"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/albGradient"
+        android:src="@drawable/grad_bg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alb_rv"
+        android:layout_below="@+id/albumIcon" />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/jcplayer_off_alb"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

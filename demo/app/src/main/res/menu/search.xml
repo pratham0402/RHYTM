@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="search"
+        android:id="@+id/search_opt"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:title="sort by"
+        android:id="@+id/sort_by"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:title="Name"
+                android:id="@+id/sort_by_name"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:title="Size"
+                android:id="@+id/sort_by_size"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:title="Date"
+                android:id="@+id/sort_by_date"
+                app:showAsAction="never"
+                />
+
+        </menu>
+
+    </item>
+
+    <!--
+    <item
+        android:title="Theme"
+        android:id="@+id/theme"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:title="Dark"
+                android:id="@+id/t1"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:title="Light"
+                android:id="@+id/t2"
+                app:showAsAction="never"
+                />
+
+
+        </menu>
+
+    </item>-->
+
+
+    <item
+
+        android:title="Find online music"
+        android:id="@+id/online"
+        app:showAsAction="never">
+
+    </item>
+
+</menu>

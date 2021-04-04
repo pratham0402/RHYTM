@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_tv"
+        android:drawableStart="@drawable/custom_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:shadowColor="#fff"
+        android:textEditSuggestionItemLayout="@mipmap/ic_launcher_round"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_tv"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:typeface="monospace"
+        android:drawableStart="@drawable/custom_lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMail"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass"
+        app:layout_constraintVertical_bias="0.102" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:text="login"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DO not have an account? Sign UP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+
+</LinearLayout>

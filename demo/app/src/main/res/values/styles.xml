@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- dark mode -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#070707</item>
+        <item name="cardbackcolor">#0A0A0A</item>
+        <item name="textcolor">#ffffff</item>
+        <item name="tintcolor">#ffffff</item>
+        <item name="buttoncolor">#55C5F8</item>
+    </style>
+
+    <!-- light mode -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">#0A0A0A</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="cardbackcolor">#ffffff</item>
+        <item name="textcolor">#0A0A0A</item>
+        <item name="tintcolor">#0A0A0A</item>
+        <item name="buttoncolor">#55C5F8</item>
+    </style>
+
+</resources>

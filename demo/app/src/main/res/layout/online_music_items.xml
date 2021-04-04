@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/song_items"
+    android:clickable="true"
+    android:padding="5dp"
+    android:focusable="true">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/online_song_img"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_file_download"
+            android:layout_centerVertical="true"/>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/online_pb"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:indeterminate="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Title"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/online_song_img"
+            android:layout_toEndOf="@+id/online_song_img"
+            android:paddingRight="50dp"
+            android:paddingEnd="50dp"
+            android:id="@+id/online_song_title"
+            android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/online_song_artist"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/online_song_img"
+        android:layout_toEndOf="@+id/online_song_img"
+        android:layout_below="@+id/online_song_title"
+        android:text="Artist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/online_dur_tv"
+        android:layout_marginRight="5dp"
+        android:text="3.5"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/online_playPause"
+        android:layout_below="@+id/online_dur_tv"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
